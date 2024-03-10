@@ -1,0 +1,15 @@
+[package]
+name = "luar"
+authors = ["Jim00000"]
+version = "0.1.0"
+edition = "2021"
+license-file = "LICENSE"
+
+[lib]
+doctest = false
+name = "luar"
+path = "src/luar.rs"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]

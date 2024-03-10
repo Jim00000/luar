@@ -1,0 +1,55 @@
+#[derive(Debug, Clone, Copy)]
+pub enum Keyword {
+    AND,
+    BREAK,
+    DO,
+    ELSE,
+    ELSEIF,
+    END,
+    FALSE,
+    FOR,
+    FUNCTION,
+    GOTO,
+    IF,
+    IN,
+    LOCAL,
+    NIL,
+    NOT,
+    OR,
+    REPEAT,
+    RETURN,
+    THEN,
+    TRUE,
+    UNTIL,
+    WHILE,
+}
+
+impl Keyword {
+    pub fn identify(word: &str) -> Option<Keyword> {
+        match word {
+            "and" => Some(Keyword::AND),
+            "break" => Some(Keyword::BREAK),
+            "do" => Some(Keyword::DO),
+            "else" => Some(Keyword::ELSE),
+            "elseif" => Some(Keyword::ELSEIF),
+            "end" => Some(Keyword::END),
+            "false" => Some(Keyword::FALSE),
+            "for" => Some(Keyword::FOR),
+            "function" => Some(Keyword::FUNCTION),
+            "goto" => Some(Keyword::GOTO),
+            "if" => Some(Keyword::IF),
+            "in" => Some(Keyword::IN),
+            "local" => Some(Keyword::LOCAL),
+            "nil" => Some(Keyword::NIL),
+            "not" => Some(Keyword::NOT),
+            "or" => Some(Keyword::OR),
+            "repeat" => Some(Keyword::REPEAT),
+            "return" => Some(Keyword::RETURN),
+            "then" => Some(Keyword::THEN),
+            "true" => Some(Keyword::TRUE),
+            "until" => Some(Keyword::UNTIL),
+            "while" => Some(Keyword::WHILE),
+            _ => None,
+        }
+    }
+}
